@@ -1,0 +1,58 @@
+schema {
+    query: Query
+}
+
+type Query{
+    namespace(name: String): Namespace,
+    namespaces: [Namespace],
+    dataElement(urn: String): DataElement
+    dataElements(key: String, value: String): [DataElement]
+    slots(key: String): [Slot]
+}
+
+type Namespace {
+    name: String
+    writable: Boolean
+    definitions: [Definition]
+    dataElements: [DataElement]
+    dataElementGroups: [DataElementGroup]
+
+}
+
+type DataElementGroup {
+    definitions: [Definition]
+    dataElements: [DataElement]
+}
+
+type DataElement {
+    identification: Identification
+    definitions: [Definition]
+    valueDomain: ValueDomain
+    slots: [Slot]
+
+}
+type Slot {
+    key: String
+    value: String
+}
+
+type Identification {
+    urn: String
+    status: String
+}
+
+type Definition {
+    definition: String
+    designation: String
+}
+
+type ValueDomain {
+    datatype: String
+    format: String
+    unitOfMeasure: String
+    maximumCharacters: Int
+    validationType: String
+    validationData: String
+}
+
+
