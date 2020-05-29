@@ -38,7 +38,7 @@
     <Loggers>
         <Logger name="org.apache.log4j.xml" level="info" />
         <Logger name="de.samply.sdao.AbstractDAO" level="info" />
-        <Root level="debug">
+        <Root level="info">
             <AppenderRef ref="STDOUT" />
         </Root>
     </Loggers>

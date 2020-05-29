@@ -1,5 +1,7 @@
 package models;
 
+import java.util.List;
+
 public class ValueDomainDTO {
 
     private String datatype;
@@ -8,6 +10,7 @@ public class ValueDomainDTO {
     private int maximumCharacters;
     private String validationType;
     private String validationData;
+    private List<PermissiableValueDTO> permissiableValues;
 
     // TODO Enumeration with the permissible Values are missing
 
@@ -61,5 +64,13 @@ public class ValueDomainDTO {
     public void setValidationData(String validationData) {
         this.validationData = validationData;
     }
+
+	public List<PermissiableValueDTO> getPermissiableValues() {
+		return permissiableValues;
+	}
+
+	public void setPermissiableValues(List<PermissiableValueDTO> permissiableValues) {
+		this.permissiableValues = permissiableValues;
+	}
 }
 
