@@ -20,7 +20,9 @@ type Namespace {
 }
 
 type DataElementGroup {
+    identification: Identification
     definitions: [Definition]
+    dataElementGroups: [DataElementGroup]
     dataElements: [DataElement]
 }
 

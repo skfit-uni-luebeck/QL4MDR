@@ -22,7 +22,6 @@ public class NamespaceRepository {
 	public NamespaceDTO getNamespace(String name, DataFetchingEnvironment env) {
 		AuthContext auth = env.getContext();
 		NamespaceDTO dto = new NamespaceDTO();
-		System.out.println(auth.getUser().getId());
 		try {
 			MDRConnection mdr = ConnectionFactory.get(auth.getUser().getId());
 			DescribedElement de = mdr.get(NamespaceDAO.class).getNamespace(name);

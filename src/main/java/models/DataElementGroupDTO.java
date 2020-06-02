@@ -6,25 +6,43 @@ import java.util.List;
 
 public class DataElementGroupDTO {
 
-    private List<Definition> definitions;
-    private List<DataElementDTO> dataElements;
+	private IdentificationDTO identification;
+	private List<Definition> definitions;
+	private List<DataElementGroupDTO> dataElementGroups;
+	private List<DataElementDTO> dataElements;
 
-    public DataElementGroupDTO() {
-    }
+	public DataElementGroupDTO() {
+	}
 
-    public List<Definition> getDefinitions() {
-        return definitions;
-    }
+	public IdentificationDTO getIdentification() {
+		return identification;
+	}
 
-    public void setDefinitions(List<Definition> definitions) {
-        this.definitions = definitions;
-    }
+	public void setIdentification(IdentificationDTO identification) {
+		this.identification = identification;
+	}
 
-    public List<DataElementDTO> getDataElements() {
-        return dataElements;
-    }
+	public List<Definition> getDefinitions() {
+		return definitions;
+	}
 
-    public void setDataElements(List<DataElementDTO> dataElements) {
-        this.dataElements = dataElements;
-    }
+	public void setDefinitions(List<Definition> definitions) {
+		this.definitions = definitions;
+	}
+
+	public List<DataElementGroupDTO> getDataElementGroups() {
+		return dataElementGroups;
+	}
+
+	public void setDataElementGroups(List<DataElementGroupDTO> dataElementGroups) {
+		this.dataElementGroups = dataElementGroups;
+	}
+
+	public List<DataElementDTO> getDataElements() {
+		return dataElements;
+	}
+
+	public void setDataElements(List<DataElementDTO> dataElements) {
+		this.dataElements = dataElements;
+	}
 }

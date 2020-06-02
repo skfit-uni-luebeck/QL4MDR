@@ -51,6 +51,7 @@ public class Converter {
 		for (IdentifiedElement e : elements) {
 			if (e.getElement().getElementType().equals(ElementType.DATAELEMENTGROUP)) {
 				DataElementGroupDTO dto = new DataElementGroupDTO();
+				dto.setIdentification(getIdentification(e));
 				dto.setDefinitions(e.getDefinitions());
 				dto.setDataElements(convert(mdr, mdr.get(IdentifiedDAO.class).getSubMembers(e.getScoped().toString())));
 				members.add(dto);
