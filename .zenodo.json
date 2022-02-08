@@ -1,0 +1,17 @@
+{
+    "creators": [
+        {
+            "affiliation": "University of Lübeck, Lübeck",
+            "name": "Ulrich, Hannes",
+            "orcid": "0000-0002-8349-6798"
+        }
+    ],
+    "description": "Samply MDR QL4MDR is the GraphlQL Interface to the Samply MDR implementing a new query language for metadata. This project implements the GraphlQL Interface only.",
+    "keywords": [
+        "Metadata",
+        "GraphQL"        
+    ],
+    "license": "AGPL-3.0",
+    "title": "Samply MDR QL4MDR",
+    "upload_type": "software"
+}
