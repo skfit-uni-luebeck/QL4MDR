@@ -1,4 +1,4 @@
-# Samply MDR QL4MDR
+# Samply MDR QL4MDR [![DOI](https://zenodo.org/badge/267859402.svg)](https://zenodo.org/badge/latestdoi/267859402)
 
 Samply MDR QL4MDR is the GraphlQL Interface to the Samply MDR implementing a new query language for metadata.
 This project implements the GraphlQL Interface *only*. 
